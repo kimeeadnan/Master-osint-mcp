@@ -17,6 +17,11 @@
 
 ## Quick Start
 
+Install uv
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/kimeeadnan/Master-osint-mcp.git
@@ -25,13 +30,12 @@
 
 2. **Install dependencies:**
    ```bash
-   pip install -r requirements.txt
-   python -m spacy download en_core_web_sm
+   uv sync
    ```
 
 3. **Test the installation:**
    ```bash
-   python3 master.py
+   uv run master.py
    ```
 
 ## Setup
@@ -45,11 +49,15 @@ Add this to your MCP client configuration:
 ```json
 {
   "mcpServers": {
-    "master-osint": {
-      "command": "python3",
-      "args": ["master.py"],
-      "cwd": "/path/to/Master-osint-mcp"
-    }
+    ""master-osint": {
+  "command": "uv",
+  "args": [
+    "--directory",
+    "/Users/kimu/Desktop/testing/osint/Master-osint-mcp",
+    "run",
+    "master.py"
+     ]
+   }
   }
 }
 ```
@@ -78,3 +86,4 @@ Add this to your MCP client configuration:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
