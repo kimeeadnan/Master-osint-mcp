@@ -49,7 +49,7 @@ Add this to your MCP client configuration:
 ```json
 {
   "mcpServers": {
-    ""master-osint": {
+   "master-osint": {
   "command": "uv",
   "args": [
     "--directory",
@@ -86,4 +86,5 @@ Add this to your MCP client configuration:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
 
