@@ -1,0 +1,19 @@
+beautifulsoup4==4.12.3
+dnspython==2.8.0
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl#sha256=1932429db727d4bff3deed6b34cfc05df17794f4a52eeb26cf8928f7c1a0fb85
+fastmcp==2.12.3
+httpx==0.28.1
+httpx-sse==0.4.1
+mcp==1.13.1
+phonenumbers==9.0.14
+python-whois==0.9.5
+requests==2.32.4
+requests-file==2.1.0
+requests-futures==1.0.2
+requests-toolbelt==1.0.0
+spacy==3.8.7
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5
+tldextract==5.3.0
+waybackpy==3.0.6
+exifread==3.5.1
